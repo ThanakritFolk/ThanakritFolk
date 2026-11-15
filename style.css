@@ -7,7 +7,11 @@ header{display:flex;align-items:center;justify-content:space-between;padding:20p
 @media(max-width:680px){header,main,footer{width:90%}nav a{padding:6px 9px}.hero{grid-template-columns:1fr;gap:26px}.hero h1{font-size:clamp(68px,15vw,96px)}figure img{height:290px;object-position:50% 27%}.row{grid-template-columns:1fr;gap:10px}.wordmark{font-size:28px}}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}}
 .tools-heading{margin:32px 0 14px;font-size:22px;letter-spacing:0}
-.tool-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:12px}
+.skills-tools{grid-column:1/-1;min-width:0}
+#skills{row-gap:1.5rem}
+.tool-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));align-items:start;gap:14px}
+@media(max-width:1000px){.tool-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:680px){.tool-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .tool-card{background:#181819;color:#fafafa;border:1px solid #38383b;border-radius:14px;overflow:hidden}
 .tool-card summary{display:grid;justify-items:center;gap:9px;padding:18px;list-style:none;font:600 16px/1.4 ui-monospace,monospace}
 .tool-card summary::-webkit-details-marker{display:none}
