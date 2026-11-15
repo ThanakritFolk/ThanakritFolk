@@ -106,7 +106,6 @@ header nav a { white-space: nowrap; }
 }
 .music-box summary:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }.music-box summary::-webkit-details-marker{display:none}
 .music-panel{position:absolute;left:0;bottom:calc(100% + 10px);width:min(420px,calc(100vw - 32px - env(safe-area-inset-left, 0px) - env(safe-area-inset-right, 0px)));max-height:calc(100dvh - 92px - env(safe-area-inset-bottom, 0px));overflow:auto;display:grid;gap:10px;padding:14px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:16px;box-shadow:0 10px 30px #0003}
-#song-player{width:100%;height:auto;aspect-ratio:16/9;min-height:200px;border:0;background:#181818}
 .music-controls{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
 .music-controls button:disabled{cursor:default;opacity:.5}
 #song-volume{min-width:4ch;text-align:center;font-variant-numeric:tabular-nums}
