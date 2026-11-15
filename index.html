@@ -9,8 +9,21 @@
 <script defer src="portfolio.js"></script>
 </head>
 <body id="home">
-<header><a class="wordmark" href="#home">Folk<span>.</span></a><nav aria-label="เมนูหลัก"><a href="#about">About</a><a href="#experience">Work</a><a href="#education">Education</a><a href="#certificates">Certificates</a><a href="#skills">Skills</a><a href="#work">Projects</a><a href="#contact">Contact</a></nav><button hidden id="theme-toggle" type="button" aria-label="ธีมมืด" aria-pressed="false">☾</button><button hidden id="music-toggle" type="button" aria-label="เพลงพื้นหลัง" aria-pressed="false"><span aria-hidden="true">♫</span> <span id="music-label">เปิดเพลง</span></button></header>
-<audio id="background-music" loop preload="none" src="audio/portfolio-loop.wav"></audio>
+<header><a class="wordmark" href="#home">Folk<span>.</span></a><nav aria-label="เมนูหลัก"><a href="#about">About</a><a href="#experience">Work</a><a href="#education">Education</a><a href="#certificates">Certificates</a><a href="#skills">Skills</a><a href="#work">Projects</a><a href="#contact">Contact</a></nav><button hidden id="theme-toggle" type="button" aria-label="ธีมมืด" aria-pressed="false">☾</button><details class="music-box" id="music-box">
+<summary>♫ เพลง</summary>
+<div class="music-panel">
+<strong lang="en">Ariana Grande - bye [Altare Remix]</strong>
+<div id="song-player"></div>
+<div class="music-controls">
+<button id="song-play" type="button" disabled>▶ เล่น</button>
+<button id="song-stop" type="button" disabled>■ หยุด</button>
+<button id="volume-down" type="button" aria-label="ลดเสียง" disabled>−</button>
+<output id="song-volume" aria-label="ระดับเสียง">40%</output>
+<button id="volume-up" type="button" aria-label="เพิ่มเสียง" disabled>+</button>
+</div>
+<div id="song-status" role="status"></div>
+<a href="https://music.youtube.com/watch?v=agneRtEe-t8" target="_blank" rel="noopener">เปิดใน YouTube Music ↗</a>
+</div></details></header>
 <main>
 <section class="hero" aria-labelledby="name"><div class="intro"><p class="mono">IT &amp; WEB PORTFOLIO</p><h1 id="name">Thanakrit<br><em>Yaiwong.</em></h1><p class="thai">ธนกฤต ใหญ่วงศ์</p><a class="action" href="#work">สำรวจผลงาน <b>↓</b></a></div><figure><div class="photo-mat"><img src="portrait.jpg" width="1463" height="2299" alt="ธนกฤตยิ้มและชูสองนิ้ว"></div><figcaption>@THANAKRITFOLK <span>✌︎</span></figcaption></figure></section>
 <section id="about" class="profile-band" aria-labelledby="about-label">
