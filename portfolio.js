@@ -39,3 +39,34 @@ function scheduleNavigation() {
 window.addEventListener('scroll', scheduleNavigation, { passive: true });
 window.addEventListener('resize', scheduleNavigation);
 updateNavigation();
+
+const music = document.querySelector('#background-music');
+const musicButton = document.querySelector('#music-toggle');
+const musicLabel = document.querySelector('#music-label');
+const projectVideo = document.querySelector('.project-list video');
+let musicEnabled = false;
+
+function syncMusic() {
+  const videoActive = projectVideo && !projectVideo.paused && !projectVideo.ended;
+  musicButton.setAttribute('aria-pressed', String(musicEnabled));
+  musicLabel.textContent = musicEnabled ? 'ปิดเพลง' : 'เปิดเพลง';
+  musicButton.title = musicEnabled && videoActive ? 'เพลงพักระหว่างเล่นวิดีโอ' : musicLabel.textContent;
+  if (!musicEnabled || videoActive) {
+    music.pause();
+    return;
+  }
+  music.play().catch(error => {
+    if (error.name === 'AbortError') return;
+    musicEnabled = false;
+    syncMusic();
+    musicButton.title = 'เล่นเพลงไม่ได้ กดเพื่อลองอีกครั้ง';
+  });
+}
+musicButton.hidden = false;
+musicButton.addEventListener('click', () => {
+  musicEnabled = !musicEnabled;
+  syncMusic();
+});
+for (const event of ['play', 'pause', 'ended']) {
+  projectVideo?.addEventListener(event, syncMusic);
+}

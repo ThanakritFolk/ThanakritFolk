@@ -83,3 +83,17 @@ header nav a { white-space: nowrap; }
   .profile-band { scroll-margin-top: 112px; }
   .current-job { grid-template-columns: 1fr; gap: 6px; padding: 20px; }
 }
+
+#music-toggle {
+  flex: none;
+  padding: 8px 13px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+#music-toggle[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+#music-toggle:focus-visible { outline: 3px dashed var(--ink); outline-offset: 3px; }
