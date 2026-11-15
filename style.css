@@ -15,3 +15,13 @@ header{display:flex;align-items:center;justify-content:space-between;padding:20p
 .tool-icon{display:grid;place-items:center;width:44px;height:44px;background:#ddd;color:#202020;border-radius:11px;font-size:22px}
 .tool-card:hover .tool-icon,.tool-card[open] .tool-icon{background:white;color:black}
 .tool-card p{color:#eee;padding:0 16px;font-size:15px}
+
+.credentials{border-top:1px solid var(--ink);padding:clamp(38px,6vw,84px) 0}
+.credential-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:22px}
+.credential{display:grid;align-content:start;gap:8px;text-decoration:none}
+.credential img{width:100%;height:180px;object-fit:contain;background:#eee;border:1px solid var(--line);padding:8px}
+.credential:hover strong{text-decoration:underline}
+.credential small{color:#444;line-height:1.65}
+.project-list{min-width:0;display:grid;gap:48px}
+.project-list video{display:block;width:100%;aspect-ratio:16/9;background:#191919;margin-bottom:16px}
+.contact-links{display:flex;gap:12px 24px;flex-wrap:wrap;margin-bottom:20px;text-underline-offset:4px}
