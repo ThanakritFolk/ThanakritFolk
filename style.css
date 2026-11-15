@@ -6,3 +6,12 @@ header{display:flex;align-items:center;justify-content:space-between;padding:20p
 .row{border-top:1px solid var(--ink);display:grid;grid-template-columns:.8fr 1.6fr;gap:8%;padding:clamp(38px,6vw,84px) 0;scroll-margin-top:18px}h2,h3,p{margin-top:0}h2{font-size:clamp(38px,6vw,84px);letter-spacing:-.075em;line-height:1;margin-bottom:20px}h3{font-size:clamp(25px,3.2vw,48px);letter-spacing:-.04em;margin-bottom:12px;line-height:1.22}p{font-size:17px;line-height:1.78}details{border-top:1px solid var(--line)}summary{cursor:pointer;padding:14px 0;font-size:19px;font-weight:600}details p{margin:0 0 16px;color:#424242}.demo{background:#181818;color:white;min-height:180px;display:grid;place-content:center;text-align:center;margin-bottom:22px;border-radius:3px}.heart{font:72px/1.1 Georgia,serif}.stars,.dots{font:14px monospace;letter-spacing:4px}.textlink,.back{display:inline-block;margin-top:18px;text-underline-offset:5px}footer{border-top:2px solid;padding:42px 0 60px}.handle{display:block;width:fit-content;font-size:clamp(32px,6vw,78px);letter-spacing:-.06em;text-decoration:none;font-weight:700}.handle:hover,.textlink:hover{text-decoration:underline}
 @media(max-width:680px){header,main,footer{width:90%}nav a{padding:6px 9px}.hero{grid-template-columns:1fr;gap:26px}.hero h1{font-size:clamp(68px,15vw,96px)}figure img{height:290px;object-position:50% 27%}.row{grid-template-columns:1fr;gap:10px}.wordmark{font-size:28px}}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}}
+.tools-heading{margin:32px 0 14px;font-size:22px;letter-spacing:0}
+.tool-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:12px}
+.tool-card{background:#181819;color:#fafafa;border:1px solid #38383b;border-radius:14px;overflow:hidden}
+.tool-card summary{display:grid;justify-items:center;gap:9px;padding:18px;list-style:none;font:600 16px/1.4 ui-monospace,monospace}
+.tool-card summary::-webkit-details-marker{display:none}
+.tool-card summary:focus-visible{outline-offset:-4px}
+.tool-icon{display:grid;place-items:center;width:44px;height:44px;background:#ddd;color:#202020;border-radius:11px;font-size:22px}
+.tool-card:hover .tool-icon,.tool-card[open] .tool-icon{background:white;color:black}
+.tool-card p{color:#eee;padding:0 16px;font-size:15px}
