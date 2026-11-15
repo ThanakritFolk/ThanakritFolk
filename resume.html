@@ -1,10 +1,31 @@
 <!doctype html>
 <html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>เรซูเม่ · Thanakrit Yaiwong</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#101012;color:#f5f5f4;font:16px/1.65 system-ui,Tahoma,sans-serif}main,nav{width:min(880px,94%);margin:auto}nav{display:flex;gap:12px;padding:22px 0;align-items:center}a{color:inherit;text-underline-offset:4px}nav a,button{padding:8px 16px;border:1px solid #555;border-radius:30px;font:inherit;text-decoration:none}button{cursor:pointer;background:#f5f4ef;color:#161617}main{background:#202023;border:1px solid #39393c;border-radius:16px;padding:clamp(22px,5vw,52px);margin-bottom:48px}header{border-bottom:1px solid #555;padding-bottom:18px}h1{font-size:clamp(30px,5vw,48px);margin:0;line-height:1.25}header p{font:15px monospace;letter-spacing:.1em}.columns{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.4fr);gap:32px}section{break-inside:avoid}h2{font-size:17px;border-bottom:1px solid #555;padding-bottom:5px;margin:24px 0 10px}p{margin:6px 0 12px}ul{padding-left:20px}li{margin-bottom:8px}.links a{overflow-wrap:anywhere}@media(max-width:620px){.columns{grid-template-columns:1fr;gap:0}}
-@page{size:A4;margin:14mm}@media print{body,main{background:white;color:black}body{font-size:10pt}nav{display:none}main{width:100%;margin:0;padding:0;border:0}.columns{display:grid;grid-template-columns:.95fr 1.4fr;gap:8mm}h1{font-size:23pt}h2{font-size:12pt;margin-top:12pt}a{color:black}}
+*{box-sizing:border-box}
+body{margin:0;color:#1e2024;background:#dededa;font:16px/1.65 "IBM Plex Sans Thai","Leelawadee UI",Tahoma,sans-serif}
+main,nav{width:min(980px,94%);margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;padding:17px 0}
+a{color:inherit;text-underline-offset:4px}
+nav a{text-decoration:none}button{font:inherit;border:0;border-radius:28px;padding:9px 18px;background:#222327;color:#fff;cursor:pointer}
+a:focus-visible,button:focus-visible{outline:3px dashed currentColor;outline-offset:4px}
+main{background:#fffefa;margin-bottom:44px;box-shadow:0 12px 42px #17171718}
+header{background:#1d1e22;color:#fff;padding:clamp(24px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:16px}
+header img{width:clamp(74px,13vw,128px);aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:3px}
+h1{font-size:clamp(28px,4.5vw,52px);line-height:1.22;margin:0;font-weight:700}
+header p{margin:9px 0 0;letter-spacing:.14em;font:500 clamp(12px,1.8vw,18px)/1.4 Consolas,monospace;color:#ddd}
+.columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.65fr)}
+.columns>div{padding:clamp(22px,3.6vw,38px)}
+.columns>div:first-child{background:#f0efea;border-right:1px solid #d1d0cc}
+section+section{margin-top:26px}
+h2{font-size:19px;margin:0 0 12px;line-height:1.4;padding-bottom:7px;border-bottom:1px solid #b8b8b5}
+p{margin:7px 0 12px}p:last-child{margin-bottom:0}
+.links a{overflow-wrap:anywhere}
+ul{padding:0;list-style:none;margin:0 0 10px}li{padding:6px 0;border-bottom:1px solid #e2e1dc}
+@media(max-width:660px){.columns{grid-template-columns:1fr}.columns>div:first-child{border:0}.columns>div:last-child{grid-row:1}header{padding:22px 16px}}
+@page{size:A4;margin:13mm}
+@media print{body{background:white;font-size:9.5pt;line-height:1.5}nav{display:none}main{width:100%;margin:0;box-shadow:none}header{color:black;background:white;padding:0 0 5mm;border-bottom:2px solid #333}header p{color:#444}header img{width:24mm}h1{font-size:25pt}.columns{grid-template-columns:minmax(0,1fr) minmax(0,1.55fr)}.columns>div{padding:5mm 0 0 5mm}.columns>div:first-child{padding:5mm 5mm 0 0;background:white;border-right:1px solid #bbb}.columns>div:last-child{grid-row:auto}section{break-inside:avoid}section+section{margin-top:4mm}h2{font-size:12pt;margin-bottom:2mm;padding-bottom:1mm}li{padding:1mm 0}a{color:#111}}
 </style></head><body><nav><a href="./#experience">← กลับไปที่ Work</a><button type="button" onclick="window.print()">พิมพ์ / บันทึก PDF</button></nav>
-<main><header><h1>ธนกฤต ใหญ่วงศ์</h1><p>THANAKRIT YAIWONG</p></header><div class="columns"><div>
+<main><header><div><h1>ธนกฤต ใหญ่วงศ์</h1><p>THANAKRIT YAIWONG</p></div><img src="portrait.jpg" alt="ธนกฤต ใหญ่วงศ์"></header><div class="columns"><div>
 <section class="links"><h2>ติดต่อ</h2><a href="tel:+66991640563">099-1640563</a><br><a href="mailto:folkapex.01@gmail.com">folkapex.01@gmail.com</a><br><a href="https://github.com/ThanakritFolk">github.com/ThanakritFolk</a></section>
 <section><h2>การศึกษา</h2><p><strong>Sripatum University</strong><br>ปริญญาตรี Information Technology<br>กำลังศึกษา</p><p><strong>Air Technical Training School</strong><br>2022–2024 · GPA 3.88</p></section>
 <section><h2>เครื่องมือและเทคโนโลยี</h2><p>Apps Script · Python · Django · SQLite · API · Git / GitHub</p><p>HTML · CSS · JavaScript · Bootstrap</p><p>Google Sheets · ERP · Excel · UiPath RPA</p></section>
