@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title">
+  <title id="title">ThanakritFolk — Selected work</title>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#292a40"/></pattern>
+    <pattern id="scan" width="8" height="10" patternUnits="userSpaceOnUse"><rect width="8" height="7" fill="#b6ff66"/></pattern>
+  </defs>
+  <rect width="1200" height="300" fill="#141422"/>
+  <rect width="1200" height="300" fill="url(#grid)"/>
+  <g font-family="monospace" fill="#c3a6ff"><text x="55" y="67" font-size="23" letter-spacing="4">GITHUB / SELECTED WORK</text></g>
+  <text x="48" y="193" font-family="Arial,sans-serif" font-weight="900" font-size="104" letter-spacing="-6" fill="#faf7ff">ThanakritFolk</text>
+  <path d="M55 237H720" stroke="#a78cff" stroke-width="3"/>
+  <g transform="translate(924 149) rotate(-21)" fill="none" stroke="#a78cff" stroke-width="3"><ellipse rx="187" ry="80"/><ellipse rx="164" ry="106"/></g>
+  <circle cx="924" cy="149" r="92" fill="url(#scan)"/>
+  <path d="M1058 61h30m-15-15v30" stroke="#fff" stroke-width="4"/>
+</svg>
